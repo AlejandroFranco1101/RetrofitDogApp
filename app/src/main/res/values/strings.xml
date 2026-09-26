@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RetrofitDogApp</string>
+    <string name="dog_image_desc">Fotografía del perro</string>
+    <string name="search_hint">Buscar por raza (ej. husky, hound, pug)...</string>
+    <string name="loading_dogs">Consultando razas en la API...</string>
+    <string name="no_dogs_found">No se encontraron imágenes para esta raza</string>
+    <string name="error_network">Sin conexión a Internet. Comprueba tu red.</string>
+    <string name="error_general">Ocurrió un error al obtener las imágenes</string>
 </resources>
