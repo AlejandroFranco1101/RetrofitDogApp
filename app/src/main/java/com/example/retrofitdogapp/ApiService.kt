@@ -22,6 +22,16 @@ interface ApiService {
     fun getDogsByBreed(@Path("raza") raza: String?): Call<DogsResponse?>?
 
     /**
+     * 🌟 PLUS EXTRA: Endpoint para consultar sub-razas jerárquicas
+     * (ejemplo: raza="terrier", subraza="scottish" -> terrier/scottish/images)
+     */
+    @GET("{raza}/{subraza}/images")
+    fun getDogsBySubBreed(
+        @Path("raza") raza: String?,
+        @Path("subraza") subraza: String?
+    ): Call<DogsResponse?>?
+
+    /**
      * 🌟 PLUS EXTRA: Endpoint adicional para obtener una imagen aleatoria de una raza específica.
      */
     @GET("{raza}/images/random")
